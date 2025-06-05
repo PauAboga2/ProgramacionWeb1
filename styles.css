@@ -1,0 +1,103 @@
+header{
+    background-image: url(https://fotos.perfil.com//2025/04/25/900/0/cazzu-estreno-latinaje-20250424-2010503.jpg?webp);
+    padding: 10px;
+    text-align: center;
+    font-family: "Cambria";
+        font-weight:bolder;
+        font-style:normal;
+        font-size:xx-large;
+        text-decoration: solid;
+        color: bisque;
+      }
+body{
+    background-color: #93553eb4;
+    
+    
+}
+nav{
+    text-align: center;
+    font-family: "Cambria";
+    font-size: 15px;
+    color: darkred;
+    font-weight: 500;
+    line-height: 1.5;
+}
+a:visited{
+    color: blue;
+}
+.subtitulo1{
+    font-family:"Cambria";
+    font-size:x-large;
+    color: brown;
+    font-weight: 600;
+    
+}
+h2{
+    padding: 10px;
+    background-color: #400D01;
+    font-family:"Cambria";
+    font-size:x-large;
+    color: brown;
+    font-weight: 600;
+    border-radius: 8px;
+    height: 45px;
+    width: 125px;
+    text-align:justify;
+
+}
+
+
+p{
+    font-family: "Cambria";
+    font-size: 20px;
+    color:#400D01;
+    font-weight: 600;
+    text-align:left;
+    line-height: 1.5;
+}
+    
+footer{
+    background-image: url(https://telefe-static.akamaized.net/media/18268694/captura-de-pantalla-2025-04-08-174050.png?width=888&height=500&mode=crop);
+    padding: 10px;
+    text-align: center;
+    font-family:"Cambria";
+    font-size:30px;
+    color: bisque;
+    font-weight: 700;
+}
+img{
+    max-width: 40%;
+    border-radius: 10px;
+    margin-top: 1rem
+}
+ul{
+    font-family: "Cambria";
+    font-size: 20px;
+    color:#400D01;
+    font-weight: 600;
+    text-align:left;
+    line-height: 1.5;
+}
+.canciones{
+    text-decoration: underline;
+
+}
+section{
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+iframe{
+    max-width: 50%;
+    border: 8px;
+    margin-top: 1rem;
+    align-content:center
+}
+h3{
+    font-family: "Cambria";
+    font-weight:bolder;
+    font-style:normal;
+    font-size:xx-large;
+    text-decoration: solid;
+    color: bisque;
+}
