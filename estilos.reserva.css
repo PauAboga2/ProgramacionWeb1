@@ -7,3 +7,21 @@ h1{
     font-family: "Caesar Dressing";
     font-size: x-large;
 }
+p{
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#volver-inicio{
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    background-color: none;
+    color: #6b283b;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+#volver-inicio:hover{
+    background-color: #6b283bb2;
+}
