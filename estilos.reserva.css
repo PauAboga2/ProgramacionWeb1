@@ -11,6 +11,7 @@ p{
     font-family: "Alumni Sans Pinstripe", sans-serif;
     font-size: 30px;
     font-weight: bolder;
+    text-align: center;
 }
 #volver-inicio{
     display: inline-block;
