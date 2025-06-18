@@ -6,6 +6,7 @@ body{
 h1{
     font-family: "Caesar Dressing";
     font-size: x-large;
+    text-align: center;
 }
 p{
     font-family: "Alumni Sans Pinstripe", sans-serif;
@@ -25,4 +26,14 @@ p{
 }
 #volver-inicio:hover{
     background-color: #6b283bb2;
+}
+.boton-volver{
+  display: inline-block;
+  background-color: rgba(122, 57, 18, 0.623);
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  animation: fadeIn 1s ease-out forwards;
+  position: absolute;
 }
