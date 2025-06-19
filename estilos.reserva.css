@@ -8,15 +8,37 @@ h1{
     font-size: x-large;
     text-align: center;
 }
-p{
+.mensaje{
     font-family: "Alumni Sans Pinstripe", sans-serif;
     font-size: 30px;
     font-weight: bolder;
     text-align: center;
 }
+    
+
+.contenedor-boton{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 10vh; 
+}
+.boton-volver{
+  background-color: rgba(122, 57, 18, 0.623);
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  animation: fadeIn 1s ease-out forwards;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto ;
+  display: block;
+  font-family:"Alumni Sans Pinstripe", sans-serif; 
+  font-size: x-large;
+}
 #volver-inicio{
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 5px;
     text-decoration: none;
     background-color: none;
     color: #6b283b;
@@ -26,14 +48,4 @@ p{
 }
 #volver-inicio:hover{
     background-color: #6b283bb2;
-}
-.boton-volver{
-  display: inline-block;
-  background-color: rgba(122, 57, 18, 0.623);
-  padding: 12px 24px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  animation: fadeIn 1s ease-out forwards;
-  position: absolute;
 }
