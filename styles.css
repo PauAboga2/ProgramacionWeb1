@@ -2,6 +2,7 @@ body{
     background-color: #93553e9f;
     margin: 0%;
     padding: 0%;
+    background-image: url(fondo.JPG);
 }   
 
 
@@ -35,39 +36,49 @@ header{
     line-height: 1.5;
 }
 
+.box{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    backdrop-filter: blur(3px); 
+}
 a:visited{
     color:blue;
 }
-.inc:hover, .art:hover, .alb:hover, .lmtd:hover, .prs:hover{
-    background-color:  #52070756;
+.opcion-menu:hover{
+    background-color:  #520707a4;
     display: inline-block;
     border-radius: 8px;
 }
-.subtitulo1:hover, .subtitulo2:hover, .subtitulo3:hover, .subtitulo4:hover, .subtitulo5:hover{
+.subtitulo{
     font-family:"Caesar Dressing";
-    font-size:x-large;
+    font-size:40px;
     font-style:bold;
     color: brown;
     font-weight: 400;  
 }
 
 h2{
-    padding: 10px;
+    padding: 20px 25px;
     background-color: #400d01dc;
     font-family:"Caesar Dressing";
     font-size:25px;
     color: brown;
     font-weight: 600;
     border-radius: 8px;
-    height: 45px;
-    width: 125px;
-    text-align:left;
+    display: flex;
+    align-items: left;
+    width: fit-content;
+    justify-content: left;
+    margin: 0 auto;
 }
 
 p{
     font-family:"Alumni Sans Pinstripe", sans-serif;
     font-size: 30px;
-    color:#400D01;
+    color:#cee0df;
     font-weight: 600;
     text-align:left;
     line-height: 1.5;
@@ -75,21 +86,22 @@ p{
 }
     
 img{
-    max-width: 40%;
+    max-width: 80%;
     border-radius: 10px;
-    margin-top: 1rem
+    margin-top: 1rem;
+    align-items: center;
 }
-
+    
 .lista-de-canciones a{
     font-family:"Alumni Sans Pinstripe", sans-serif;
     font-size: 25px;
     font-weight:bolder;
     line-height: 1.5;
     text-decoration: none;
-    color: #400D01;
+    color: #cee0df;
 }
 .lista-de-canciones a:hover{
-    color:#52070756;
+    color:#b48e8e56;
     text-decoration: none;
 }
 .canciones{
@@ -104,9 +116,37 @@ img{
     font-weight:bolder;
     line-height: 1.5;
     text-decoration: none;
-    color: #400D01;
+    color: #cee0df;
+}
+.galeria{
+    display: flex;
+    gap:1px;
 }
 
+.foto{
+    position:relative;
+    width:350px; 
+    height:250px; 
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; 
+    display: flex;
+    align-items: center;
+}
+.foto img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    object-fit:cover;
+    display: block;
+}
+.foto:hover {
+    transform: scale(1.05); 
+}
+
+.foto:hover img {
+    transform: scale(1.1); 
+}
 section{
     padding: 2rem;
     max-width: 1000px;
@@ -141,7 +181,7 @@ select:hover{
 }
 
 .boton-compra:hover {
-    background-color:#52070756;
+    background-color:#9155556e;
 }
 .boton-compra{
     display: block;
