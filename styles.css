@@ -92,7 +92,7 @@ img{
     align-items: center;
 }
     
-.lista-de-canciones a{
+.lista-de-canciones a, .lista-de-canciones{
     font-family:"Alumni Sans Pinstripe", sans-serif;
     font-size: 25px;
     font-weight:bolder;
@@ -153,9 +153,9 @@ section{
     margin: auto;
 }
 
-iframe{
+iframe, .ubicacion{
     max-width: 80%;
-    border: 8px;
+    border-radius: 10px;
     margin-top: 1rem;
     align-content:center;
 }
