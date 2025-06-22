@@ -15,11 +15,24 @@ header{
     padding: 10px;
     text-align: center;
     font-family: "Cambria";
-        font-weight:bolder;
-        font-style:normal;
-        font-size:xx-large;
-        text-decoration: solid;
-        color: bisque;
+    font-weight:bolder;
+    font-style:normal;
+    font-size:xx-large;
+    text-decoration: solid;
+    color: bisque;
+    animation: mover-fondo 10s ease-in-out infinite;
+}
+
+@keyframes mover-fondo{
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: center 20px;
+  }
+  100% {
+    background-position: center;
+  }
 }
 .titulo-header{
     color: transparent;
@@ -34,6 +47,9 @@ header{
     font-size: 25px;
     color: darkred;
     line-height: 1.5;
+    position: absolute;
+    top: 250px;
+    left: 0;
 }
 
 .box{
@@ -167,6 +183,7 @@ iframe, .ubicacion{
   margin-bottom: 10px;
   border-radius: 8px;
 }
+
 select{
     width: 250px;
     padding: 5px;
@@ -174,10 +191,19 @@ select{
     border: 1px solid #ccc;
     border-radius: 8px;
     appearance: none;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+select option{
+    font-weight: bolder;
+    color: black;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
 }
 
 select:hover{
-    color: #52070756;;
+    color: #52070796;;
 }
 
 .boton-compra:hover {
@@ -196,7 +222,6 @@ input[type="text"]{
     border: 1px solid #ccc;
     border-radius: 8px;
     font-weight: bolder;
-
 }
 input[type="text"]:focus{
     outline: none;
@@ -205,13 +230,14 @@ input[type="text"]:focus{
 }
 
 footer{
-    background-image: url(header.JPG);
+    background-image: url(/Imágenes/header.JPG);
     background-position: center;
     background-size:auto;
     padding: 10px;
     text-align: center;
     font-size:30px;
     font-weight: 400;
+    animation: mover-fondo 10s ease-in-out infinite;
 }
 
 .textfooter{
