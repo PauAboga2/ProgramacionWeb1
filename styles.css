@@ -206,13 +206,13 @@ select:hover{
     color: #52070796;;
 }
 
-.boton-compra:hover {
+.boton-compra:hover, .boton-consulta:hover {
     background-color:#9155556e;
 }
-.boton-compra{
-    display: block;
-    padding:10px 20px;
-    border-radius: 8px;
+.boton-compra .boton-consulta{
+    display:flex;
+    padding:20px 30px;
+    border-radius: 10px;
     cursor: pointer;
 }
 input[type="text"]{
@@ -227,6 +227,17 @@ input[type="text"]:focus{
     outline: none;
     border-color: #52070756;
     box-shadow: 0 0 4px #52070791;
+}
+
+.consulta-cuadro{
+    width:600px ;
+    height: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family:"Alumni Sans Pinstripe", sans-serif;
+    font-size: large;
+    align-items:center;
 }
 
 footer{
