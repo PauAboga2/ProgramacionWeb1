@@ -2,12 +2,12 @@ body{
     background-color: #93553e9f;
     margin: 0%;
     padding: 0%;
-    background-image: url(/imagenes/fondo.JPG);
+    background-image: url(imagenes/fondo.JPG);
 }   
 
 
 header{
-    background-image: url(/imagenes/header.JPG);
+    background-image: url(imagenes/header.JPG);
     background-position: center;
     background-repeat: repeat;
     background-size: auto;
@@ -241,7 +241,7 @@ input[type="text"]:focus{
 }
 
 footer{
-    background-image: url(/Imágenes/header.JPG);
+    background-image: url(imagenes/header.JPG);
     background-position: center;
     background-size:auto;
     padding: 10px;
