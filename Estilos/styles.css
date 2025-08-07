@@ -39,46 +39,42 @@ header{
 }
 
 nav {
- background-color: rgba(64, 13, 1, 0.377);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.336);
-  padding: 10px 0;
-  width: 100%;
-  z-index: 999; 
   position: fixed;
-  max-height: 100vh;
-  overflow-y: auto;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(64, 13, 1, 0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
 }
 
 .menu {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 20px;
+  padding: 10px;
   margin: 0;
   font-family: "Caesar Dressing";
-  font-size: 20px;
-  flex-wrap: wrap;
-  background-color: transparent;
+  font-size: 18px;
 }
 
-#menu-toggle {
-  display: none;
-}
 
-.menu-icon {
-  display: none;
-  font-size: 30px;
-  color: #ffe0b2;
-  cursor: pointer;
-  padding: 15px;
-  z-index: 1000;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 .menu li {
-  padding: 10px 20px;
+  margin: 5px 10px;
+}
+
+.menu a {
+  color: #ffe0b2;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+}
+
+.menu a:hover {
+  background-color: #6b283bb2;
+  border-radius: 6px;
 }
 
 main {
@@ -298,54 +294,24 @@ footer{
     color: transparent;
 }
 @media screen and (max-width: 768px) {
-  .menu-icon {
-    display: block;
-    font-size: 30px;
-    color: #ffe0b2;
-    padding: 10px 20px;
-    cursor: pointer;
-    position: fixed;
-    top: 10px;
-    right: 20px;
-    z-index: 1001;
-  }
-
+    
   .menu {
-    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    background-color: rgba(64, 13, 1, 0.95);
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    padding: 15px;
-    overflow-y: auto;
-    max-height: 90vh;
-    z-index: 1000;
+    align-items: center;
   }
 
- 
-  #menu-toggle:checked + .menu-icon + .menu {
-  display: flex;
- }
-
-  .opcion-menu {
+  .menu li {
     width: 100%;
-    padding: 10px 15px;
-    border-bottom: 1px solid #ffffff33;
+    text-align: center;
   }
 
-  .opcion-menu a {
-    display: block;
-    width: 100%;
-    color: #ffe0b2;
-    text-decoration: none;
+  .menu a {
+    padding: 12px 20px;
+    font-size: 16px;
   }
-
-  .opcion-menu a:hover {
-    background-color: #6b283bb2;
-  }
+}
+main {
+  padding-top: 150px; 
 }
 
 
