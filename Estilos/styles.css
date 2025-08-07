@@ -44,6 +44,9 @@ nav {
   padding: 10px 0;
   width: 100%;
   z-index: 999; 
+  position: fixed;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 .menu {
@@ -301,11 +304,12 @@ footer{
     color: #ffe0b2;
     padding: 10px 20px;
     cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 20px;
     z-index: 1001;
-    position: relative;
   }
 
-  
   .menu {
     display: none;
     flex-direction: column;
@@ -313,20 +317,19 @@ footer{
     background-color: rgba(64, 13, 1, 0.95);
     position: absolute;
     top: 60px;
-    right: 0;
     left: 0;
+    right: 0;
     padding: 15px;
     overflow-y: auto;
-    max-height: 90vh; 
+    max-height: 90vh;
     z-index: 1000;
   }
 
-  
+ 
   #menu-toggle:checked + .menu-icon + nav .menu {
     display: flex;
   }
 
-  
   .opcion-menu {
     width: 100%;
     padding: 10px 15px;
