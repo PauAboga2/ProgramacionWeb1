@@ -295,23 +295,7 @@ footer{
     color: transparent;
 }
 @media screen and (max-width: 768px) {
-  .menu {
-    flex-direction:column;
-    align-items: center;
-    padding: 10px 0;
-    background-color: rgba(64, 13, 1, 0.377);
-  }
 
-  .menu li {
-    width: 100%;
-    text-align: center;
-    margin: 0;
-  }
-
-  .menu a {
-    padding: 10px;
-    font-size: 16px;
-  }
 }
 main {
   padding-top: 100px; 
@@ -352,5 +336,51 @@ main {
   .doble-seccion img {
     width: 100%;
     height: auto;
+  }
+}
+
+.barra-top {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(64, 13, 1, 0.95);
+  z-index: 999;
+  padding: 5px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.menu-mini {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Caesar Dressing", cursive;
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+
+.menu-mini li {
+  padding: 6px 8px;
+}
+
+.menu-mini a {
+  color: #ffe0b2;
+  text-decoration: none;
+}
+
+.menu-mini a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .menu-mini {
+    font-size: 13px;
+    flex-direction: column;
+  }
+
+  .menu-mini li {
+    padding: 4px 0;
   }
 }
