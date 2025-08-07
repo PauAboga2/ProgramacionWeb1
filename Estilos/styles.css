@@ -39,8 +39,8 @@ header{
 }
 
 nav {
- background-color: rgba(64, 13, 1, 0.288);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+ background-color: rgba(64, 13, 1, 0.103);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.288);
   padding: 10px 0;
   width: 100%;
   z-index: 999; 
@@ -303,7 +303,7 @@ footer{
     display: none;
     flex-direction: column;
     align-items: flex-start;
-    background-color: rgba(64, 13, 1, 0.95);
+    background-color: rgba(64, 13, 1, 0.247);
     position: absolute;
     top: 60px;
     right: 0;
