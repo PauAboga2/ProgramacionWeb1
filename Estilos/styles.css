@@ -45,7 +45,7 @@ nav {
   z-index: 999;
   background-color: rgba(64, 13, 1, 0.85);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-  padding: 5px 0;
+  padding: 5px 10px;
 }
 
 .menu {
@@ -57,7 +57,7 @@ nav {
   padding: 10px;
   margin: 0;
   font-family: "Caesar Dressing";
-  font-size: 18px;
+  font-size: 16px;
   background-color: transparent;
 }
 
@@ -79,7 +79,7 @@ nav {
 }
 
 main {
-  padding-top: 100px; 
+  padding-top: 90px; 
 }
 
 .box{
