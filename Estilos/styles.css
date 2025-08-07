@@ -12,7 +12,6 @@ header{
     background-position: center;
     background-repeat: repeat;
     background-size: auto;
-    width: 100%;
     padding: 10px;
     text-align: center;
     font-family: "Cambria";
@@ -40,19 +39,33 @@ header{
 }
 
 .menu{
-    text-align: left;
-    font-family:"Caesar Dressing";
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal ;
-    font-size: 25px;
-    color: darkred;
-    line-height: 1.5;
-    position: absolute;
-    top: 250px;
-    left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  background-color: transparent; 
+  font-family: "Caesar Dressing";
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+.menu li {
+  padding: 10px 20px;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(64, 13, 1, 0.281);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
 }
 
+main {
+  padding-top: 80px; 
+}
 .box{
     max-width: 800px;
     margin: 40px auto;
@@ -62,10 +75,12 @@ header{
     backdrop-filter: blur(3px); 
 }
 a:visited{
-    color:blue;
+    color:#ffe0b2;
+    text-decoration: none;
+    font-weight: bold;
 }
 .opcion-menu:hover{
-    background-color:  #520707a4;
+    background-color:  #ff6b00;
     display: inline-block;
     border-radius: 8px;
 }
@@ -136,33 +151,31 @@ img{
     color: #cee0df;
 }
 .galeria{
-    display: flex;
-    gap:1px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 20px;
+    justify-content: center;
 }
 
 .foto{
-    position:relative;
-    width:350px; 
-    height:250px; 
     overflow: hidden;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out; 
-    display: flex;
-    align-items: center;
+    transition: transform 0.3s ease-in-out;
 }
 .foto img{
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease-in-out;
-    object-fit:cover;
-    display: block;
+   width: 100%;
+   height: auto;
+   display: block;
+   object-fit: cover;
+   transition: transform 0.3s ease-in-out;
 }
 .foto:hover {
-    transform: scale(1.05); 
+    transform: scale(1.02); 
 }
 
 .foto:hover img {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 section{
     padding: 2rem;
@@ -216,15 +229,20 @@ select:hover{
     border-radius: 10px;
     cursor: pointer;
 }
-input[type="text"]{
+.formulario-consulta input,
+.formulario-consulta textarea {
     width: 250px;
     box-sizing: border-box;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-weight: bolder;
+    font-family: inherit;
+    resize: vertical;
 }
-input[type="text"]:focus{
+
+.formulario-consulta input:focus,
+.formulario-consulta textarea:focus {
     outline: none;
     border-color: #52070756;
     box-shadow: 0 0 4px #52070791;
@@ -259,4 +277,42 @@ footer{
     font-size:xx-large;
     text-decoration: solid;
     color: transparent;
+}
+@media screen and (max-width: 768px) {
+    .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  .opcion-menu {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .opcion-menu a {
+    display: block;
+    width: 100%;
+    color: #d9480f;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .doble-seccion {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .doble-seccion .columna {
+    flex: 1;
+  }
+
+  .doble-seccion img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 }

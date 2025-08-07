@@ -49,3 +49,32 @@ h1{
 #volver-inicio:hover{
     background-color: #6b283bb2;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .confirmacion {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
+  .boton-volver {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #volveralinicio {
+    width: 100%;
+    text-align: center;
+    padding: 12px 15px;
+    font-size: 1rem;
+  }
+}

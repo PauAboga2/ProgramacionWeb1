@@ -74,3 +74,31 @@
   font-weight: bold;
   animation: fadeIn 1s ease-out forwards;
 }
+@media screen and (max-width: 768px) {
+  #container {
+    padding: 60px 15px;
+    max-width: 90%;
+  }
+
+  .error-code {
+    font-size: 4rem;
+  }
+
+  .error-mensaje {
+    font-size: 1rem;
+  }
+
+  .Robot {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  #volver-inicio {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    text-align: center;
+  }
+}

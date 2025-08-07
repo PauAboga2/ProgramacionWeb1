@@ -47,15 +47,21 @@
        
     <div class="box">
            
-        <section id="artista">
-                 <h2 class="subtitulo">Sobre Cazzu</h2>
+        <section id="artista" class="doble-seccion">
+            <div class="columna">
+                <h2 class="subtitulo">Sobre Cazzu</h2>
                  <p> Julieta Emilia Cazzuchelli, « Cazzu », nació el 16 de diciembre de 1993 en Jujuy, provincia del norte argentino.
                  Comenzó a cantar a los once años dentro del repertorio del folklore argentino en bares y fiestas de su provincia natal, animada por su padre, mientras su hermana participaba en concursos de canto o fiestas del colegio.
                  Su interés por la música fue creciendo, empezando a experimentar en la escuela y formando parte de algunas bandas de géneros varios.
                  Comenzó en 2017 como Cazzu con los sencillos « Más » y « Killa », con el productor Cristian Kris. En octubre de ese mismo año, lanzó su álbum debut, Maldade$,Este álbum fue el primer proyecto de la cantante y uno de los que impulsó su reconocimiento en la escena.
                  También fue el primer álbum de trap latino interpretado por una mujer en la historia de Argentina.
                  En el año 2018, participó en el remix del tema « Loca », junto a Khea, Duki y Bad Bunny.Este sencillo no solamente obtuvo millones de reproducciones en YouTube y Spotify sino que también es conocido como el tema que abrió el camino internacional a la escena de la música urbana.
-                 <img src="https://billboard.ar/wp-content/uploads/2025/05/cazzu-web.jpg" alt="Cazzu">
+            </div>
+                 <div class="columna">
+                    <img src="https://billboard.ar/wp-content/uploads/2025/05/cazzu-web.jpg" alt="Cazzu">
+
+                 </div>
+                 
             </section>
     </div>
 
@@ -165,8 +171,8 @@
         <p>Si tenes dudas o necesitas ponerte en contacto con nosotros dejanos tus datos y tu mensaje que pronto estaremos atendiendo tu inquietud. </p>
         <form class="formulario-consulta" action="paginas/confirmacion.html">
         <p><label for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre" required></p>
-        <p><label for="apellido">Apellido:</label><input type="text" name="nombre" id="nombre" required></p>
-        <p><label for="mail">E-mail:</label><input type="text" name="nombre" id="nombre" required></p>
+        <p><label for="apellido">Apellido:</label><input type="text" name="apellido" id="apellido" required></p>
+        <p><label for="correo">Correo:</label><input type="email" name="correo" id="correo" required></p>
         <p><label for="consulta">Consulta:</label> <textarea class="cuadro-consulta" placeholder="Escribí tu mensaje" name="consulta" id="consulta" rows="10" maxlength="1000"></textarea></p>
         
         <button class="boton-consulta" type="submit">Enviar consulta</button>
