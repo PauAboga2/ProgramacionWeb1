@@ -43,7 +43,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 999;
-  background-color: rgba(64, 13, 1, 0.95);
+  background-color: rgba(64, 13, 1, 0.295);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   padding: 10px 0;
 }
