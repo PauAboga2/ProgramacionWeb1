@@ -39,15 +39,11 @@ header{
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: rgba(64, 13, 1, 0.9); 
+ background-color: rgba(64, 13, 1, 0.9);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   padding: 10px 0;
-  max-height: 100vh;
-  overflow-y: auto;  
+  width: 100%;
+  z-index: 999; 
 }
 
 .menu {
@@ -57,12 +53,27 @@ nav {
   list-style: none;
   padding: 20px;
   margin: 0;
-  background-color: transparent;
   font-family: "Caesar Dressing";
   font-size: 20px;
   flex-wrap: wrap;
+  background-color: transparent;
 }
 
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: #ffe0b2;
+  cursor: pointer;
+  padding: 15px;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .menu li {
   padding: 10px 20px;
 }
@@ -284,19 +295,30 @@ footer{
     color: transparent;
 }
 @media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
   .menu {
+    display: none;
     flex-direction: column;
     align-items: flex-start;
-    font-size: 18px;
-    padding: 10px;
-    box-shadow: none;
+    background-color: rgba(64, 13, 1, 0.95);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    padding: 15px;
+  }
+
+  #menu-toggle:checked , .menu-icon , nav .menu {
+    display: flex;
   }
 
   .opcion-menu {
     width: 100%;
     padding: 10px 15px;
     border-bottom: 1px solid #ffffff33;
-    position: static;
   }
 
   .opcion-menu a {
@@ -304,7 +326,6 @@ footer{
     width: 100%;
     color: #ffe0b2;
     text-decoration: none;
-    position: static;
   }
 
   .opcion-menu a:hover {
