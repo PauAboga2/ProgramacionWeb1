@@ -75,7 +75,7 @@ main {
     backdrop-filter: blur(3px); 
 }
 a:visited{
-    color:#ffe0b2;
+    color:#ffe0b2 !important;
     text-decoration: none;
     font-weight: bold;
 }
