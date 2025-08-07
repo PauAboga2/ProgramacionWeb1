@@ -38,34 +38,39 @@ header{
     color: transparent;
 }
 
-.menu{
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(64, 13, 1, 0.9); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
+  max-height: 100vh;
+  overflow-y: auto;  
+}
+
+.menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
   padding: 20px;
   margin: 0;
-  background-color: transparent; 
+  background-color: transparent;
   font-family: "Caesar Dressing";
   font-size: 20px;
   flex-wrap: wrap;
 }
+
 .menu li {
   padding: 10px 20px;
 }
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: rgba(64, 13, 1, 0.281);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-  padding: 10px 0;
-}
 
 main {
-  padding-top: 80px; 
+  padding-top: 100px; 
 }
+
 .box{
     max-width: 800px;
     margin: 40px auto;
@@ -279,27 +284,34 @@ footer{
     color: transparent;
 }
 @media screen and (max-width: 768px) {
-    .menu {
+  .menu {
     flex-direction: column;
     align-items: flex-start;
     font-size: 18px;
+    padding: 10px;
     box-shadow: none;
   }
 
   .opcion-menu {
     width: 100%;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-     position: static;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ffffff33;
+    position: static;
   }
 
   .opcion-menu a {
     display: block;
     width: 100%;
-    color: #d9480f;
-     position: static;
+    color: #ffe0b2;
+    text-decoration: none;
+    position: static;
+  }
+
+  .opcion-menu a:hover {
+    background-color: #6b283bb2;
   }
 }
+
 
 @media screen and (min-width: 1024px) {
   .doble-seccion {
@@ -317,5 +329,23 @@ footer{
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .doble-seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .doble-seccion .columna {
+    width: 100%;
+  }
+
+  .doble-seccion img {
+    width: 100%;
+    height: auto;
   }
 }
