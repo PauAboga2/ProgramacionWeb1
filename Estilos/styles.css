@@ -311,7 +311,7 @@ footer{
     padding: 15px;
   }
 
-  #menu-toggle:checked , .menu-icon , nav .menu {
+  #menu-toggle:checked + .menu-icon + nav .menu {
     display: flex;
   }
 
