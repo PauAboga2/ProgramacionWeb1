@@ -43,9 +43,9 @@ nav {
   top: 0;
   width: 100%;
   z-index: 999;
-  background-color: rgba(64, 13, 1, 0.295);
+  background-color: rgba(64, 13, 1, 0.85);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .menu {
@@ -58,6 +58,7 @@ nav {
   margin: 0;
   font-family: "Caesar Dressing";
   font-size: 18px;
+  background-color: transparent;
 }
 
 
@@ -68,7 +69,7 @@ nav {
 .menu a {
   color: #ffe0b2;
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 6px 10px;
   display: block;
 }
 
@@ -294,24 +295,26 @@ footer{
     color: transparent;
 }
 @media screen and (max-width: 768px) {
-    
   .menu {
     flex-direction: column;
     align-items: center;
+    padding: 10px 0;
+    background-color: rgba(64, 13, 1, 0.9);
   }
 
   .menu li {
     width: 100%;
     text-align: center;
+    margin: 0;
   }
 
   .menu a {
-    padding: 12px 20px;
+    padding: 10px;
     font-size: 16px;
   }
 }
 main {
-  padding-top: 150px; 
+  padding-top: 140px; 
 }
 
 
