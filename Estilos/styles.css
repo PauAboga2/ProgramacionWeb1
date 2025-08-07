@@ -296,10 +296,10 @@ footer{
 }
 @media screen and (max-width: 768px) {
   .menu {
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
     padding: 10px 0;
-    background-color: rgba(64, 13, 1, 0.9);
+    background-color: rgba(64, 13, 1, 0.377);
   }
 
   .menu li {
