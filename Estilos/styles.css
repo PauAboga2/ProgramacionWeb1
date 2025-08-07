@@ -297,26 +297,36 @@ footer{
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: block;
+    font-size: 30px;
+    color: #ffe0b2;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
   }
 
+  
   .menu {
     display: none;
     flex-direction: column;
     align-items: flex-start;
-    background-color: rgba(64, 13, 1, 0.247);
+    background-color: rgba(64, 13, 1, 0.95);
     position: absolute;
     top: 60px;
     right: 0;
     left: 0;
     padding: 15px;
     overflow-y: auto;
-    max-height: none;
+    max-height: 90vh; 
+    z-index: 1000;
   }
 
+  
   #menu-toggle:checked + .menu-icon + nav .menu {
     display: flex;
   }
 
+  
   .opcion-menu {
     width: 100%;
     padding: 10px 15px;
